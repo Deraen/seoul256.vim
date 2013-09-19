@@ -97,7 +97,7 @@ function! s:hi(item, fg, bg)
   endif
 endfunction
 
-let s:seoul256_background = min([max([get(g:, 'seoul256_background', 237), 234]), 239])
+let s:seoul256_background = 233
 
 if !has('gui_running')
   set t_Co=256
@@ -285,7 +285,34 @@ call s:hi('GitGutterChangeDelete', 168, '')
 
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces     
 " ---------------------------------------------------^^^^^
-call s:hi('ExtraWhitespace', '', s:seoul256_background - 1)
+call s:hi('ExtraWhitespace', '', 196)
+
+" Signify
+call s:hi('SignifySignAdd', 112, s:seoul256_background)
+call s:hi('SignifySignChange', 220, s:seoul256_background)
+call s:hi('SignifySignDelete', 160, s:seoul256_background)
+
+" Syntastic
+call s:hi('SyntasticErrorSign', 160, s:seoul256_background)
+call s:hi('SyntasticWarningSign', 197, s:seoul256_background)
+
+" Rainbow parenthesis
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
 
 " vim-ruby
 " --------
