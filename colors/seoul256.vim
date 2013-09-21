@@ -179,7 +179,7 @@ call s:hi('ColorColumn', '', s:seoul256_background - 1)
 
 " set cursorline cursorcolumn
 call s:hi('CursorLine', '', s:seoul256_background - 1)
-call s:hi('CursorLineNr', 131, s:seoul256_background - 1)
+call s:hi('CursorLineNr', s:seoul256_background - 1, s:seoul256_background - 1)
 call s:hi('CursorColumn', '', s:seoul256_background - 1)
 
 call s:hi('Directory', 187, '')
@@ -196,13 +196,13 @@ call s:hi('Folded', 101, s:seoul256_background + 1)
 " set foldcolumn=1
 call s:hi('FoldColumn', 144, s:seoul256_background + 1)
 
-call s:hi('MatchParen', 232, '')
+call s:hi('MatchParen', 131, s:seoul256_background)
 
 " -- INSERT --
 call s:hi('ModeMsg', 173, '')
 
 " let &showbreak = '> '
-call s:hi('NonText', 101, '')
+call s:hi('NonText', s:seoul256_background, '')
 
 call s:hi('MoreMsg', 173, '')
 
