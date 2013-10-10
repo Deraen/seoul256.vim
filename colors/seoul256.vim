@@ -133,7 +133,7 @@ call s:hi('Conditional', 110, '')
 
 " while end
 call s:hi('Repeat', 68, '')
-call s:hi('Todo', 161, s:seoul256_background - 2)
+call s:hi('Todo', s:seoul256_background, 161)
 call s:hi('Function', 187, '')
 
 " Macros
@@ -298,20 +298,15 @@ call s:hi('SyntasticWarningSign', 197, s:seoul256_background)
 
 " Rainbow parenthesis
 let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
+    \ [192,       'RoyalBlue3'],
+    \ [204,   'firebrick3'],
+    \ [146,    'RoyalBlue3'],
+    \ [72,     'SeaGreen3'],
+    \ [221,       'firebrick3'],
+    \ [51, 'DarkOrchid3'],
+    \ [225,    'SeaGreen3'],
+    \ [187,     'DarkOrchid3'],
+    \ [153,         'firebrick3'],
     \ ]
 
 " vim-ruby
@@ -327,7 +322,7 @@ call s:hi('rubyBlockParameterList', 186, '')
 call s:hi('rubyCurlyBlockDelimiter', 144, '')
 
 " ARGV $stdout
-call s:hi('rubyPredefinedIdentifier', 230, '')
+" call s:hi('rubyPredefinedIdentifier', 230, '')
 " hi rubyRegexpSpecial
 
 hi CursorLine cterm=NONE
