@@ -191,7 +191,7 @@ call s:hi('DiffChange', 'NONE', 240)
 call s:hi('DiffText', 'NONE', 52)
 
 call s:hi('DiffText', 'NONE', 52)
-call s:hi('VertSplit', s:seoul256_background_d2, s:seoul256_background_d2)
+call s:hi('VertSplit', s:seoul256_background, 235)
 call s:hi('Folded', 101, s:seoul256_background + 1)
 
 " set foldcolumn=1
