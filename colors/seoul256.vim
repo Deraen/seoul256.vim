@@ -119,11 +119,11 @@ let s:style_idx = s:style == 'light'
 
 " Background colors
 if s:style == 'dark'
-  let s:dark_bg  = get(s:, 'seoul256_background', 237)
+  let s:dark_bg  = get(s:, 'seoul256_background', 233)
   let s:light_bg = 253
 else
-  let s:dark_bg  = 237
-  let s:light_bg = get(s:, 'seoul256_background', 253)
+  let s:dark_bg  = 233
+  let s:light_bg = get(s:, 'seoul256_background', 255)
 endif
 let s:dark_bg_2 = s:dark_bg > 233 ? s:dark_bg - 2 : 16
 let s:light_bg_1 = min([s:light_bg + 1, 256])
@@ -236,7 +236,7 @@ call s:hi('DiffDelete', ['NONE', 'NONE'], [95, 181])
 call s:hi('DiffChange', ['NONE', 'NONE'], [s:dark_bg + 3, 189])
 call s:hi('DiffText',   ['NONE', 'NONE'], [52, 224])
 
-call s:hi('VertSplit', [s:dark_bg, s:light_bg], [235, 235])
+call s:hi('VertSplit', [s:dark_bg, s:light_bg], [235, 240])
 call s:hi('Folded', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
 
 " set foldcolumn=1
