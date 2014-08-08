@@ -358,15 +358,13 @@ call s:hi('SyntasticWarningSign', [197, 197], [s:dark_bg, s:light_bg])
 
 " Rainbow parenthesis
 let g:rbpt_colorpairs = [
-    \ [192,       'RoyalBlue3'],
-    \ [204,   'firebrick3'],
-    \ [146,    'RoyalBlue3'],
-    \ [72,     'SeaGreen3'],
-    \ [221,       'firebrick3'],
-    \ [51, 'DarkOrchid3'],
-    \ [225,    'SeaGreen3'],
-    \ [187,     'DarkOrchid3'],
-    \ [153,         'firebrick3'],
+    \ [192, '#dfff87'],
+    \ [204, '#ff5f87'],
+    \ [146, '#afafdf'],
+    \ [72,  '#5faf87'],
+    \ [225, '#ffdfff'],
+    \ [120, '#87ff87'],
+    \ [153, '#afdfff'],
     \ ]
 
 " vim-ruby
