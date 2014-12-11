@@ -356,17 +356,6 @@ call s:hi('SignifySignDelete', [160, 160], [s:dark_bg, s:light_bg])
 call s:hi('SyntasticErrorSign', [160, 160], [s:dark_bg, s:light_bg])
 call s:hi('SyntasticWarningSign', [197, 197], [s:dark_bg, s:light_bg])
 
-" Rainbow parenthesis
-let g:rbpt_colorpairs = [
-    \ [192, '#dfff87'],
-    \ [204, '#ff5f87'],
-    \ [146, '#afafdf'],
-    \ [72,  '#5faf87'],
-    \ [225, '#ffdfff'],
-    \ [120, '#87ff87'],
-    \ [153, '#afdfff'],
-    \ ]
-
 " vim-ruby
 " --------
 " " rubySymbol
