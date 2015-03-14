@@ -192,7 +192,7 @@ call s:hi('ColorColumn', ['', ''], [s:dark_bg - 1, s:light_bg - 2])
 " set cursorline cursorcolumn
 call s:hi('CursorLine', ['', ''], [s:dark_bg - 1, s:light_bg - 1])
 call s:hi('CursorLineNr', [s:dark_bg + 1, s:light_bg - 2], [s:dark_bg + 1, s:light_bg - 2])
-call s:hi('CursorColumn', ['', ''], [s:dark_bg - 1, s:light_bg - 1])
+call s:hi('CursorColumn', ['', ''], [s:dark_bg - 1, s:light_bg - 2])
 
 call s:hi('Directory', [187, 95], ['', ''])
 
@@ -207,7 +207,7 @@ call s:hi('Folded', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
 " set foldcolumn=1
 call s:hi('FoldColumn', [144, 94], [s:dark_bg + 1, s:light_bg - 2])
 
-call s:hi('MatchParen', ['', ''], [25, s:light_bg - 3])
+call s:hi('MatchParen', ['', ''], [25, 255])
 
 " -- INSERT --
 call s:hi('ModeMsg', [173, 173], ['', ''])
