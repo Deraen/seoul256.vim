@@ -94,6 +94,14 @@ let s:dark_bg_2 = s:dark_bg > 233 ? s:dark_bg - 2 : 16
 let s:light_bg_1 = min([s:light_bg + 1, 256])
 let s:light_bg_2 = min([s:light_bg + 2, 256])
 
+if exists('g:seoul256_transparent')
+  let s:light_master_bg = 'NONE'
+  let s:dark_master_bg = 'NONE'
+else
+  let s:light_master_bg = s:light_bg
+  let s:dark_master_bg = s:dark_bg
+endif
+
 " Foreground colors
 let s:dark_fg = 252
 let s:light_fg = 239
@@ -121,7 +129,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-call s:hi('Normal', [s:dark_fg, s:light_fg], [s:dark_bg, 'none'])
+call s:hi('Normal', [s:dark_fg, s:light_fg], [s:dark_master_bg, s:light_master_bg])
 
 call s:hi('LineNr', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
 call s:hi('Visual', ['', ''], [23, 152])
