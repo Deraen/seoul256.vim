@@ -131,7 +131,7 @@ endif
 
 call s:hi('Normal', [s:dark_fg, s:light_fg], [s:dark_master_bg, s:light_master_bg])
 
-call s:hi('LineNr', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
+call s:hi('LineNr', [101, 101], [s:dark_bg + 1, s:light_bg])
 call s:hi('Visual', ['', ''], [23, 152])
 call s:hi('VisualNOS', ['', ''], [23, 152])
 
@@ -210,7 +210,7 @@ call s:hi('DiffChange', ['NONE', 'NONE'], [s:dark_bg + 3, 189])
 call s:hi('DiffText',   ['NONE', 'NONE'], [52, 224])
 
 call s:hi('VertSplit', [s:dark_bg, s:light_bg], [235, 240])
-call s:hi('Folded', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
+call s:hi('Folded', [101, 101], [s:dark_bg + 1, s:light_bg])
 
 " set foldcolumn=1
 call s:hi('FoldColumn', [144, 94], [s:dark_bg + 1, s:light_bg - 2])
