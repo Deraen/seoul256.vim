@@ -213,7 +213,7 @@ endif
 
 call s:hi('Normal', [s:dark_fg, s:light_fg], [s:dark_master_bg, s:light_master_bg])
 
-call s:hi('LineNr', [101, 101], [s:dark_bg + 1, s:light_bg])
+call s:hi('LineNr', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
 call s:hi('Visual', ['', ''], [23, 152])
 call s:hi('VisualNOS', ['', ''], [23, 152])
 
@@ -281,8 +281,8 @@ call s:hi('ColorColumn', ['', ''], [s:dark_bg - 1, s:light_bg - 2])
 
 " set cursorline cursorcolumn
 call s:hi('CursorLine', ['', ''], [s:dark_bg - 1, s:light_bg - 1])
-call s:hi('CursorLineNr', [s:dark_bg + 1, s:light_bg - 2], [s:dark_bg + 1, s:light_bg - 2])
-call s:hi('CursorColumn', ['', ''], [s:dark_bg - 1, s:light_bg - 2])
+call s:hi('CursorLineNr', [131, 131], [s:dark_bg - 1, s:light_bg - 1])
+call s:hi('CursorColumn', ['', ''], [s:dark_bg - 1, s:light_bg - 1])
 
 call s:hi('Directory', [187, 95], ['', ''])
 
@@ -291,7 +291,7 @@ call s:hi('DiffDelete', ['NONE', 'NONE'], [95, 181])
 call s:hi('DiffChange', ['NONE', 'NONE'], [s:dark_bg + 3, 189])
 call s:hi('DiffText',   ['NONE', 'NONE'], [52, 224])
 
-call s:hi('VertSplit', [s:dark_bg, s:light_bg], [235, 240])
+call s:hi('VertSplit', [s:dark_bg, s:light_bg], [s:dark_bg + 2, s:light_bg - 3])
 call s:hi('Folded', [101, 101], [s:dark_bg + 1, s:light_bg])
 
 " set foldcolumn=1
@@ -417,11 +417,6 @@ call s:hi('SignifySignDelete', [161, 161], [s:dark_bg + 1, s:light_bg - 2])
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces     
 " ---------------------------------------------------^^^^^
 call s:hi('ExtraWhitespace', ['', ''], [196, 196])
-
-" Signify
-call s:hi('SignifySignAdd', [112, 112], [s:dark_bg, s:light_bg])
-call s:hi('SignifySignChange', [220, 220], [s:dark_bg, s:light_bg])
-call s:hi('SignifySignDelete', [160, 160], [s:dark_bg, s:light_bg])
 
 " Syntastic
 call s:hi('SyntasticErrorSign', [160, 160], [s:dark_bg, s:light_bg])
