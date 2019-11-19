@@ -221,7 +221,7 @@ call s:hi('Comment', [65, 65], ['', ''])
 call s:hi('Number', [222, 95], ['', ''])
 call s:hi('Float', [222, 95], ['', ''])
 call s:hi('Boolean', [103, 168], ['', ''])
-call s:hi('String', [109, 30], ['', ''])
+call s:hi('String', [109, 24], ['', ''])
 call s:hi('Constant', [73, 23], ['', ''])
 call s:hi('Character', [174, 168], ['', ''])
 call s:hi('Delimiter', [137, 94], ['', ''])
@@ -258,7 +258,7 @@ call s:hi('Type', [179, 94], ['', ''])
 call s:hi('Operator', [186, 131], ['', ''])
 
 " super yield
-call s:hi('Keyword', [168, 168], ['', ''])
+call s:hi('Keyword', [168, 125], ['', ''])
 
 " raise
 call s:hi('Exception', [161, 161], ['', ''])
